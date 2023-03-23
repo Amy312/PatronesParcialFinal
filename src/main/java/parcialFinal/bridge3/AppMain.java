@@ -8,7 +8,7 @@ public class AppMain {
         empresaSA.agregarPaquete(new Paquete(50.0F, "peluche", "140 gr"));
         empresaSA.agregarPaquete(new Paquete(20.50F, "dulces", "120 gr"));
         empresaSA.agregarPaquete(new Paquete(1000.30F, "ropa", "1 kg"));
-        empresaSA.agregarPaquete(new Paquete(10000.99F, "tv", "3.5 kg"));
+        empresaSA.agregarPaquete(new Paquete(10000.00F, "tv", "3.5 kg"));
         empresaSA.agregarPaquete(new Paquete(9000.00F, "laptop", "0.5 kg"));
         empresaSA.agregarPaquete(new Paquete(3500.00F, "celular", "340 gr"));
 
@@ -25,9 +25,17 @@ public class AppMain {
 
 
         empresaSA.enviarPaquete("tv", aire);
+        empresaSA.enviarPaquete("celular", mar);
+        empresaSA.enviarPaquete("laptop", tierra);
 
-        empresaSA.enviarPaquete("tv", mar);
-        empresaSA.enviarPaquete("tv", tierra);
+        empresaSA.enviarPaquete("vidrio", tierra);
+
+        empresaSRL.enviarPaquete("plastico", aire);
+        empresaSRL.enviarPaquete("vidrio", mar);
+        empresaSRL.enviarPaquete("porcelana", tierra);
+
+        empresaSRL.enviarPaquete("celular", tierra);
+
 
     }
 }

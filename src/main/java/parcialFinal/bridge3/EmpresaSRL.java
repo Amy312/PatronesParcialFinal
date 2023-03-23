@@ -27,12 +27,12 @@ public class EmpresaSRL implements IEmpresa{
                 paquete.showInfo();
                 System.out.println("Precio del paquete inicial: " + paquete.getPrecio());
                 float total = paquete.getPrecio()*envio.agregarCosto() + paquete.getPrecio();
-                System.out.println("Precio total por el envio por " + envio.tipo() + ": " + df.format(total));
+                System.out.println("Precio total por el envio por " + envio.tipo() + ": " + df.format(total) + "\n");
                 break;
             }
         }
         if(!sw){
-            System.out.println("No se encuentra el paquete en la empresa SA");
+            System.out.println("No se encuentra el paquete en la empresa SRL");
         }
 
     }
