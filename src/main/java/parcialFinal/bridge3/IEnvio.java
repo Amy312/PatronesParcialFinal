@@ -1,5 +1,6 @@
 package parcialFinal.bridge3;
 
 public interface IEnvio {
-    void agregarCosto();
+    float agregarCosto();
+    String tipo();
 }
