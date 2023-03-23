@@ -1,0 +1,17 @@
+15% Bridge : Se tiene 2 empresas (Empresa SRL, Empresa SA) de envío de paquetes,
+estos paquetes tienen como atributos (precio, nombre del paquete, peso) ambos tienen
+metodos de envioPaquete ( Aire, Tierra) cuando se envía por aire se debe sumar 10%
+del precio del paquete, cuando se envía por tierra se debe sumar el 5% del precio del
+paquete y ahora se quiere agregar un nuevo tipo de envio: Mar cuando se envía por
+este medio se debe sumar 25% del precio del paquete .
+
+Empresa
+-> EmpresaSRL
+-> EmpresaSA
+
+Paquete(precio, nombre, peso)
+
+Envio
+->Aire - sumar10%
+->Tierra - sumar5%
+->Mar - sumar25%
